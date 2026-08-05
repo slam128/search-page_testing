@@ -17,6 +17,8 @@
     "series": [],
     "topics": [],
     "software": [],
+    "module": [],
+    "certificate": []
   }
 
   function hasFilter() {
@@ -27,6 +29,10 @@
     } else if(filters["topics"].length != 0) {
       return true
     } else if(filters["software"].length != 0) {
+      return true
+    } else if(filters["module"].length != 0) {
+      return true
+    } else if(filters["certificate"].length != 0) {
       return true
     }
 
@@ -473,21 +479,29 @@
       const series = [];
       const topics = [];
       const software = [];
+      const module = [];
+      const certificate = [];
 
       let yearsContainer = document.getElementById('yearsFilters')
       let seriesContainer = document.getElementById('seriesFilters')
       let topicsContainer = document.getElementById('topicsFilters');
       let softwareContainer = document.getElementById('softwareFilters');
+      let moduleContainer = document.getElementById('moduleFilters');
+      let certificateContainer = document.getElementById('certificateFilters');
 
       let yearsContainerMobile = document.getElementById('yearsFiltersMobile')
       let seriesContainerMobile = document.getElementById('seriesFiltersMobile')
       let topicsContainerMobile = document.getElementById('topicsFiltersMobile');
       let softwareContainerMobile = document.getElementById('softwareFiltersMobile');
+      let moduleContainerMobile = document.getElementById('moduleFiltersMobile');
+      let certificateContainerMobile = document.getElementById('certificateFiltersMobile');
 
       let splitYears = [];
       let splitSeries = [];
       let splitTopics = [];
       let splitSoftware = [];
+      let splitModule = [];
+      let splitCertificate = [];
 
       let counts = {};
 
@@ -546,6 +560,33 @@
         } 
       }
 
+      splitModule = json[i].module.split(";");
+      splitModule = splitModule.map((x) => x.trim());
+      for (let j = 0; j < splitModule.length; j++) {
+        if (!counts[splitModule[j]]) {
+          counts[splitModule[j]] = 1;
+        } else {
+          counts[splitModule[j]] += 1;
+        }
+        if (splitModule[j] !== "N/A" && !module.includes(splitModule[j])) {
+          module.push(splitModule[j]);
+        }
+      }
+      
+      splitCertificate = json[i].certificate.split(";");
+      splitCertificate = splitCertificate.map((x) => x.trim());
+      for (let j = 0; j < splitCertificate.length; j++) {
+        if (!counts[splitCertificate[j]]) {
+          counts[splitCertificate[j]] = 1;
+        } else {
+          counts[splitCertificate[j]] += 1;
+        }
+      
+        if (splitCertificate[j] !== "N/A" && !certificate.includes(splitCertificate[j])) {
+          certificate.push(splitCertificate[j]);
+        }
+      }
+
       years.sort();
 
       /* Sort  by frequency */
@@ -558,6 +599,8 @@
       series.sort((a, b) => a.localeCompare(b));
       software.sort((a,b) => a.localeCompare(b));
       topics.sort((a, b) => a.localeCompare(b));
+      module.sort((a, b) => a.localeCompare(b));
+      certificate.sort((a, b) => a.localeCompare(b));
       
 
       addFilter("year", years, yearsContainer, counts)
@@ -568,6 +611,10 @@
       addFilter("topics", topics, topicsContainerMobile, counts)
       addFilter("software", software, softwareContainer, counts)
       addFilter("software", software, softwareContainerMobile, counts)
+      addFilter("module", module, moduleContainer, counts)
+      addFilter("module", module, moduleContainerMobile, counts)
+      addFilter("certificate", certificate, certificateContainer, counts)
+      addFilter("certificate", certificate, certificateContainerMobile, counts)
     }
   
     function initWithURL (url) {
