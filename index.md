@@ -27,12 +27,18 @@ nav_order: 2
             <details class="filter-dropdown" id="seriesFiltersMobile">
               <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Series</summary>
             </details>
+            <details class="filter-dropdown" id="typeFiltersMobile">
+              <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Type</summary>
+            </details>
             <details class="filter-dropdown" id="topicsFiltersMobile">
               <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Topics</summary>
             </details>
             <details class="filter-dropdown" id="softwareFiltersMobile">
               <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Software</summary>
             </details>
+            /*<details class="filter-dropdown" id="certificateFiltersMobile">
+              <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Certificate</summary>
+            </details>*/
           </fieldset>
         </div>
       </div>
@@ -50,12 +56,18 @@ nav_order: 2
         <details open class="filter-dropdown" id="seriesFilters">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Series</summary>
         </details>
+        <details open class="filter-dropdown" id="typeFilters">
+          <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Type</summary>
+        </details>
         <details open class="filter-dropdown" id="topicsFilters">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Topics</summary>
         </details>
         <details open class="filter-dropdown" id="softwareFilters">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Software</summary>
         </details>
+        /*<details class="filter-dropdown" id="certificateFilters">
+              <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Certificate</summary>
+            </details>*/
       </fieldset>
     </div>
   </div>
@@ -140,6 +152,32 @@ $.getJSON('data.json', function(obj) {
           value.forEach(createYear);
           return strr.slice(0, -2);
         }
+
+        if (prop === 'type') {
+          var strr = "";
+          function createType(type) { strr = strr.concat(type, ", ");  }
+          if(value == "N/A") {
+            return strr;
+          } else {
+            strr = " - ";
+          }
+          value = value.split("; ");
+          value.forEach(createType);
+          return strr.slice(0, -2);
+        }
+
+        /*if (prop === 'certificate') {
+          var strr = "";
+          function createCertificate(certificate) { strr = strr.concat(certificate, ", ");  }
+          if(value == "N/A") {
+            return strr;
+          } else {
+            strr = " - ";
+          }
+          value = value.split("; ");
+          value.forEach(createCertificate);
+          return strr.slice(0, -2);
+        }*/
 
         if (prop === 'url' || prop === 'year' || prop === 'series' || prop === 'image') {
           return getProperty(title, prop);
