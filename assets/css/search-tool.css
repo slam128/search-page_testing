@@ -52,7 +52,7 @@ hr {
     width: 30%; 
     font-size: small; 
     overflow-y: scroll;
-    padding-bottom: 2em;
+    padding-bottom: 0.5em;
 }
 
 .filters-container-mobile {
@@ -140,7 +140,7 @@ ul > li {
 }
 
 .sidebar-footer-spacer {
-  height: 2em;
+  height: 0.5em;
 }
 
 @media only screen and (max-width: 750px) {
