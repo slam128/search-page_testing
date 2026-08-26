@@ -20,7 +20,7 @@ nav_order: 2
         </label>
         <div class="filters-container-mobile">
           <fieldset>
-            <legend style="font-weight: bold; padding: 0.5em 0.5em">Filters</legend>
+            <legend style="font-weight: bold; padding: 0.25em 0.5em">Filters</legend>
             <details class="filter-dropdown" id="yearsFiltersMobile">
               <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Year</summary>
             </details>
@@ -49,7 +49,7 @@ nav_order: 2
     <!-- Filters -->
     <div class="filters-container">
       <fieldset>
-        <legend style="font-weight: bold; padding: 0.5em 0.5em">Filters</legend>
+        <legend style="font-weight: bold; padding: 0.25em 0.5em">Filters</legend>
         <details open class="filter-dropdown" id="yearsFilters">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Year</summary>
         </details>
