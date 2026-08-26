@@ -9,7 +9,7 @@ hr {
 
 .search-filter-container {
     height: 800px; 
-    overflow-y: clip;
+    overflow-y: auto;
 }
 
 .search-container {
