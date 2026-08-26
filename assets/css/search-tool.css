@@ -139,10 +139,6 @@ ul > li {
     margin: unset;
 }
 
-.sidebar-footer-spacer {
-  height: 0.5em;
-}
-
 @media only screen and (max-width: 750px) {
     body {
         overflow-y: scroll;
