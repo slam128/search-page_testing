@@ -20,7 +20,7 @@ nav_order: 2
         </label>
         <div class="filters-container-mobile">
           <fieldset>
-            <legend style="font-weight: bold; padding: 0em 0.5em">Filters</legend>
+            <legend style="font-weight: bold; padding: 0.5em 0.5em">Filters</legend>
             <details class="filter-dropdown" id="yearsFiltersMobile">
               <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Year</summary>
             </details>
@@ -40,7 +40,6 @@ nav_order: 2
               <!-- <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Certificate</summary> -->
             <!-- </details>-->
           </fieldset>
-          <div class="sidebar-footer-spacer"></div>
         </div>
       </div>
       <div class="results-container" id="results-container">
@@ -50,7 +49,7 @@ nav_order: 2
     <!-- Filters -->
     <div class="filters-container">
       <fieldset>
-        <legend style="font-weight: bold; padding: 0em 0.5em">Filters</legend>
+        <legend style="font-weight: bold; padding: 0.5em 0.5em">Filters</legend>
         <details open class="filter-dropdown" id="yearsFilters">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Year</summary>
         </details>
@@ -68,9 +67,9 @@ nav_order: 2
         </details>
         <!-- <details class="filter-dropdown" id="certificateFilters"> -->
               <!-- <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Certificate</summary> -->
-           <!-- </details>*/ -->
+           <!-- </details> -->
       </fieldset>
-      <div class="sidebar-footer-spacer"></div>
+      <!-- <div class="sidebar-footer-spacer"></div> -->
     </div>
   </div>
 </div>
