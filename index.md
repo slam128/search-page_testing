@@ -40,6 +40,7 @@ nav_order: 2
               <!-- <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Certificate</summary> -->
             <!-- </details>-->
           </fieldset>
+          <div class="sidebar-footer-spacer"></div>
         </div>
       </div>
       <div class="results-container" id="results-container">
@@ -69,6 +70,7 @@ nav_order: 2
               <!-- <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Certificate</summary> -->
            <!-- </details>*/ -->
       </fieldset>
+      <div class="sidebar-footer-spacer"></div>
     </div>
   </div>
 </div>
