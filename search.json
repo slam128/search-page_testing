@@ -12,8 +12,7 @@ layout: none
         "series"     : "{{ workshop.Series }}",
         "type"       : "{{ workshop.Type }}",
         "topics"     : "{{ workshop.Topic }}",
-        "software"   : "{{ workshop.Software }}"
-        //"certificate"   : "{{ workshop.Certificate }}"
+        "software"   : "{{ workshop.Software }}",
       }{% unless forloop.last %},{% endunless %}
     {% endif %}
   {% endfor %}
