@@ -9,7 +9,7 @@ hr {
 
 .search-filter-container {
     height: auto; 
-    overflow-y: visible;
+    overflow-y: scroll;
 }
 
 .search-container {
@@ -37,12 +37,12 @@ hr {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: max-content max-content max-content max-content; 
-    overflow-y: visible; 
+    overflow-y: scroll; 
     height: auto;
 }
 
 #text-results-container {
-    overflow-y: visible; 
+    overflow-y: scroll; 
     height: auto;
     width: 100%;
 }
