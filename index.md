@@ -36,9 +36,9 @@ nav_order: 2
             <details class="filter-dropdown" id="softwareFiltersMobile">
               <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Software</summary>
             </details>
-            /*<details class="filter-dropdown" id="certificateFiltersMobile">
-              <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Certificate</summary>
-            </details>*/
+            <!-- <details class="filter-dropdown" id="certificateFiltersMobile"> -->
+              <!-- <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Certificate</summary> -->
+            <!-- </details>-->
           </fieldset>
         </div>
       </div>
@@ -65,9 +65,9 @@ nav_order: 2
         <details open class="filter-dropdown" id="softwareFilters">
           <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Software</summary>
         </details>
-        /*<details class="filter-dropdown" id="certificateFilters">
-              <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Certificate</summary>
-            </details>*/
+        <!-- <details class="filter-dropdown" id="certificateFilters"> -->
+              <!-- <summary style="border-bottom: none; margin-bottom: 0; padding-bottom: 0.25em;">Certificate</summary> -->
+           <!-- </details>*/ -->
       </fieldset>
     </div>
   </div>
