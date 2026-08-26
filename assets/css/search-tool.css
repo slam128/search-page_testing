@@ -51,6 +51,7 @@ hr {
     width: 30%; 
     font-size: small; 
     overflow-y: scroll;
+    padding-bottom: 1.5em;
 }
 
 .filters-container-mobile {
@@ -205,6 +206,7 @@ ul > li {
     width: 100%;
     margin-top: 1em;
     overflow-y: visible;
+    padding-bottom: 1.5em;
   }
 
   .results-container {
