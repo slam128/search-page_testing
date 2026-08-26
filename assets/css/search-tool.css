@@ -38,7 +38,7 @@ hr {
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: max-content max-content max-content max-content; 
     overflow-y: auto; 
-    height: calc(100vh - 120px);
+    height: calc(100vh - 110px);
 }
 
 #text-results-container {
@@ -48,7 +48,7 @@ hr {
 }
 
 .filters-container {
-    height: calc(100vh - 120px);
+    height: calc(100vh - 110px);
     width: 30%; 
     font-size: small; 
     overflow-y: scroll;
@@ -58,7 +58,7 @@ hr {
     display: none;
     position: relative;
     background-color: white;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     width: 100%;
     max-height: 20em;
     overflow-y: scroll;
