@@ -139,6 +139,10 @@ ul > li {
     margin: unset;
 }
 
+.sidebar-footer-spacer {
+  height: 2em;
+}
+
 @media only screen and (max-width: 750px) {
     body {
         overflow-y: scroll;
@@ -189,42 +193,3 @@ ul > li {
         background-color: white;
     }
 }
-
-/* Mobile + small screens */
-@media (max-width: 900px) {
-
-  .search-container {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .search-container-left {
-    width: 100%;
-    padding-right: 0;
-  }
-
-  .filters-container {
-    width: 100%;
-    margin-top: 1em;
-    overflow-y: visible;
-    padding-bottom: 1.5em;
-  }
-
-  .results-container {
-    grid-template-columns: 1fr 1fr; /* 2 columns on tablets */
-    height: auto;
-  }
-}
-
-@media (max-width: 600px) {
-
-  .results-container {
-    grid-template-columns: 1fr; /* 1 column on phones */
-  }
-
-  .search-filter-container {
-    height: auto;
-    overflow-y: visible;
-  }
-}
-
