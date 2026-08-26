@@ -14,7 +14,7 @@ layout: none
           "image"      : "{{ workshop.Image }}",
           "series"     : "{{ workshop.Series }}",
           "type"       : "{{ workshop.Type }}",
-          "topics"      : "{{ workshop.Topic }}",
+          "topic"      : "{{ workshop.Topic }}",
           "software"   : "{{ workshop.Software }}"
           {% comment %}{ {% assign splitTags = workshop.tags | split: ", " %} / [{% for tag in splitTags %}"{{tag}}"{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endcomment %}
       }{% unless forloop.last %},{% endunless %}
