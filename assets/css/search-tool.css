@@ -52,7 +52,6 @@ hr {
     width: 30%; 
     font-size: small; 
     overflow-y: scroll;
-    padding-bottom: 0.5em;
 }
 
 .filters-container-mobile {
