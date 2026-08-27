@@ -8,8 +8,8 @@ hr {
 }
 
 .search-filter-container {
-    height: calc(100vh - 10px); 
-    overflow-y: hidden;
+    height: 100vh; 
+    overflow-y: auto;
 }
 
 .search-container {
