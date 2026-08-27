@@ -39,7 +39,7 @@ hr {
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: max-content max-content max-content max-content; 
     overflow-y: auto; 
-    height: calc(100vh - 120px);
+    height: calc(100vh - 100px);
     padding: 1em;
 }
 
