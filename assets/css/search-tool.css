@@ -8,8 +8,9 @@ hr {
 }
 
 .search-filter-container {
-    height: 100vh; 
-    overflow-y: auto;
+    height: auto; 
+    min-height: calc(100vh - 120px);
+    overflow: visible;
 }
 
 .search-container {
@@ -38,7 +39,7 @@ hr {
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: max-content max-content max-content max-content; 
     overflow-y: auto; 
-    height: calc(100vh - 150px);
+    height: calc(100vh - 120px);
     padding: 1em;
 }
 
@@ -49,7 +50,7 @@ hr {
 }
 
 .filters-container {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 120px);
     width: 30%; 
     font-size: small; 
     overflow-y: scroll;
