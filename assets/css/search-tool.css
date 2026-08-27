@@ -8,7 +8,7 @@ hr {
 }
 
 .search-filter-container {
-    height: calc(100vh - 120px); 
+    height: 100vh; 
     overflow-y: auto;
 }
 
@@ -48,7 +48,7 @@ hr {
 }
 
 .filters-container {
-    height: calc(100vh - 10px);
+    height: calc(100vh - 5px);
     width: 30%; 
     font-size: small; 
     overflow-y: scroll;
